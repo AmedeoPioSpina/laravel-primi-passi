@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $testo = 'Questi sono dati passati tramite la Blade';
+    return view('home', ['testo' => $testo]);
 });
